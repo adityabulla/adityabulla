@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        font-size: 20px;
+        background: blue;
+      }
+      @media (max-width: 525px) {
+        .container {
+          background: aqua;
+          font-size: 35px; /* 
+        20px on desktop;
+        23px on mobile;
+        22px on tablets;
+         */
+        }
+      }
+
+      @media (max-width: 375px) {
+        .container {
+          font-size: 15px;
+          background: blue;
+          /* 
+        20px on desktop;
+        23px on mobile;
+        22px on tablets;
+         */
+        }
+      }
+
+      @media only print {
+        .container {
+          background: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum commodi
+      cupiditate architecto molestias? Esse consequatur sapiente autem
+      cupiditate provident ex, labore unde officiis aspernatur, repellendus
+      reprehenderit maiores a laudantium laborum?
+    </div>
+  </body>
+</html>
